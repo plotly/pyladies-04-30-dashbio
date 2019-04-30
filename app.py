@@ -19,7 +19,9 @@ component = dashbio.Molecule3dViewer(
     selectionType='atom'
 )
 
-app.layout = html.Div([component, html.Div(id='output')])
+app.layout = html.Div([component,
+                       html.Div('Selected atom IDs:'),
+                       html.Div(id='output')])
 
 
 @app.callback(
@@ -30,7 +32,7 @@ def print_selected(selected):
     if selected is None or len(selected) == 0:
         return "No atoms selected."
     selected = [str(selection) for selection in selected]
-    return 'Selected atom IDs: ' + ', '.join(selected)
+    return ', '.join(selected)
 
 
 if __name__ == '__main__':

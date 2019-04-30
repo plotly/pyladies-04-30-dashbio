@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#molecule3dviewer {
+    margin-bottom: 20px;
+}
+#output {
+    border: solid 1px #E6E6E6;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
